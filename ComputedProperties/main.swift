@@ -7,5 +7,15 @@
 
 import Foundation
 
-print("Hello, World!")
+struct Person {
+    let firstName: String
+    let lastName: String
+    
+    var fullName: String {
+        return "\(firstName) \(lastName)"
+    }
+}
 
+let mrCormell = Person(firstName: "Mr", lastName: "Cormell")
+
+print(mrCormell.fullName)
